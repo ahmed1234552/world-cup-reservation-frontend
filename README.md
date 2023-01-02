@@ -6,7 +6,7 @@
 - [x] Login Page
 - [x] Register Page
 - [x] Stadiums Page
-- [ ] Match Details Page
+- [x] Match Details Page
 - [ ] Seat Reservation Page
 - [ ] Seat Reservation Confirmation Page
 - [ ] Seat Reservation Cancellation Page
@@ -94,25 +94,25 @@ Available only for managers and site administrators.
 ## 6. Match Details Page
 
 ### Match Details Page for guests
-- [ ] Match details.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Seat Reservation page. (redirects to login page)
-- [ ] Button to go to Login/Register page.
+- [x] Match details.
+- [x] Button to go to Home page.
+- [x] Button to go to Seat Reservation page. (redirects to login page)
+- [x] Button to go to Login/Register page.
 
 ### Match Details Page for fans
-- [ ] Match details.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Seat Reservation page.
-- [ ] Button to go to Profile Edit page.
-- [ ] Button to go to Logout.
+- [x] Match details.
+- [x] Button to go to Home page.
+- [x] Button to go to Seat Reservation page.
+- [x] Button to go to Profile Edit page.
+- [x] Button to go to Logout.
 
 ### Match Details Page for managers and site administrators
-- [ ] Match details.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Seat Reservation page.
-- [ ] Button to go to Profile Edit page.
-- [ ] Button to go to Logout.
-- [ ] Button to go to modify the details of an existing match page.
+- [x] Match details.
+- [x] Button to go to Home page.
+- [x] Button to go to Seat Reservation page.
+- [x] Button to go to Profile Edit page.
+- [x] Button to go to Logout.
+- [x] Button to go to modify the details of an existing match page.
 
 ## 7. Seat Reservation Page
 

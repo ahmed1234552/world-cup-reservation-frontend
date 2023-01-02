@@ -11,8 +11,8 @@
 - [x] [Match Details Page](#7-match-details-page)
 - [x] [Create a new match Page](#8-create-a-new-match-page)
 - [x] [Modify the details of an existing match Page](#9-modify-the-details-of-an-existing-match-page)
-- [ ] [Seat Reservation Page](#10-seat-reservation-page)
-- [ ] [Seat Reservation Payment Page](#11-seat-reservation-payment-page)
+- [x] [Seat Reservation Page](#10-seat-reservation-page)
+- [x] [Seat Reservation Payment Page](#11-seat-reservation-payment-page)
 - [ ] [Seat Reservation Status Page](#12-seat-reservation-status-page)
 - [ ] [Admin Portal Page](#13-admin-portal-page)
 
@@ -151,24 +151,24 @@ Available only for managers and site administrators.
 
 ## 10. Seat Reservation Page
 
-- [ ] List of all seats showing the status of each seat.
-- [ ] Button to go to Home page.
-- [ ] Show the selected seats.
-- [ ] Total price and other details.
-- [ ] Button to cancel reservation. (redirects to match details page)
-- [ ] Button to go to Logout.
-- [ ] Button to go to Profile Edit page.
+- [x] List of all seats showing the status of each seat.
+- [x] Button to go to Home page.
+- [x] Show the selected seats.
+- [x] Total price and other details.
+- [x] Button to cancel reservation. (redirects to match details page)
+- [x] Button to go to Logout.
+- [x] Button to go to Profile Edit page.
 
 
 ## 11. Seat Reservation Payment Page
 
-- [ ] Show the payment details.
-- [ ] Enter payment details.
-- [ ] Button to Pay.
-- [ ] Button to Cancel reservation. (redirects to match details page)
-- [ ] Button to go to Logout. (cancel reservation)
-- [ ] Button to go to Profile Edit page. (cancel reservation)
-- [ ] Button to go to Home page. (cancel reservation)
+- [x] Show the payment details.
+- [x] Enter payment details.
+- [x] Button to Pay.
+- [x] Button to Cancel reservation. (redirects to match details page)
+- [x] Button to go to Logout. (cancel reservation)
+- [x] Button to go to Profile Edit page. (cancel reservation)
+- [x] Button to go to Home page. (cancel reservation)
 
 ## 12. Seat Reservation Status Page
 

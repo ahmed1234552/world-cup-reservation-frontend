@@ -14,7 +14,7 @@
 - [x] [Seat Reservation Page](#10-seat-reservation-page)
 - [x] [Seat Reservation Payment Page](#11-seat-reservation-payment-page)
 - [ ] [Seat Reservation Status Page](#12-seat-reservation-status-page)
-- [ ] [Admin Portal Page](#13-admin-portal-page)
+- [x] [Admin Portal Page](#13-admin-portal-page)
 
 
 ## 1. Home Page
@@ -181,15 +181,13 @@ Available only for managers and site administrators.
 ## 13. Admin Portal Page
 
 Available only for site administrators.
-- [ ] List of all users.
-- [ ] button to delete a user.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Logout.
-- [ ] List of manager requests.
-- [ ] button to accept a manager request.
-- [ ] button to reject a manager request.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Logout.
-- [ ] List of Profile Edit.
-
+- [x] List of all users.
+- [x] button to delete a user.
+- [x] Button to go to Home page.
+- [x] Button to go to Logout.
+- [x] List of manager requests.
+- [x] button to accept a manager request.
+- [x] button to reject a manager request.
+- [x] Button to go to Home page.
+- [x] Button to go to Logout.
 

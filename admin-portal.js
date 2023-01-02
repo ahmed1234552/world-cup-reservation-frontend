@@ -63,10 +63,10 @@ async function loadUsers() {
 }
 
 
-async function deleteUser() {
+async function deleteUser(user) {
     // This function is called when the delete button is clicked
-    let username = this.id.split('-')[1];
-    console.log(this.id);
+    let username = user.id.split('-')[1];
+    console.log(user.id);
     let url = `https://careful-elk-petticoat.cyclic.app/api/users/${username}`;
     let data = await fetch(url, {
         method: 'DELETE',
@@ -101,19 +101,69 @@ let managerRequests = [
 async function loadManagerRequests() {
     let requestsWrapper = document.querySelector('#requests');
     // let loader = document.querySelector('#requests-loader');
-    managerRequests.forEach((request, index)=>{
-        requestsWrapper.innerHTML += `
-            <tr>
-                <th scope="row">${index+1}</th>
-                <td>${request.firstName}</td>
-                <td>${request.email}</td>
-                <td><button class="btn btn-success">Approve</button></td>
-                <td><button class="btn btn-danger">Reject</button></td>
-            </tr>
-        `;
-    }); 
+    let url = 'https://careful-elk-petticoat.cyclic.app/api/users/pending';
+    let data = await fetch(url);
+    let res = await data.json();
+    if (data.ok) {
+        setTimeout(async() => {
+            res.data.forEach((request, index)=>{
+                let approveButtonId = 'approve-' + request.user_name;
+                let rejectButtonId = 'reject-' + request.user_name;
+                requestsWrapper.innerHTML += `
+                    <tr>
+                        <th scope="row">${index+1}</th>
+                        <td>${request.fname}</td>
+                        <td>${request.email}</td>
+                        <td><button id="${approveButtonId}" class="btn btn-success" onClick="approveUser.call(this)">Approve</button></td>
+                        <td><button id="${rejectButtonId}" class="btn btn-danger" onClick="rejectUser.call(this)">Reject</button></td>
+                    </tr>
+                `;
+            });
+        }, 1000);
+    }
 
 }
+
+async function approveUser(user) {
+    // This function is called when the approve button is clicked
+    let username = user.id.split('-')[1];
+    console.log(user.id);
+    let url = `https://careful-elk-petticoat.cyclic.app/api/users/confirm/${username}`;
+    let data = await fetch(url, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+    let res = await data.json();
+    if (data.ok) {
+        console.log(res);
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
+    }
+}
+
+async function rejectUser(user) {
+    // This function is called when the reject button is clicked
+    let username = user.id.split('-')[1];
+    console.log(user.id);
+    let url = `https://careful-elk-petticoat.cyclic.app/api/users/deny/${username}`;
+    let data = await fetch(url, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+    let res = await data.json();
+    if (data.ok) {
+        console.log(res);
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
+    }
+}
+
 
 loadUsers();
 loadManagerRequests();

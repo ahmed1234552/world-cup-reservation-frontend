@@ -12,7 +12,7 @@
       <img src="./images/logo.svg" alt="Logo" class="logo-img" />
     </a>
 
-    <form action="https://httpbin.org/post" method="POST" class="form login">
+    <form onsubmit="login.call()" class="form login">
 
       <div class="form__field">
         <label for="login__username"><svg class="icon">
@@ -29,7 +29,7 @@
       </div>
 
       <div class="form__field">
-        <input type="submit" value="Log In">
+        <input value="Log In" onclick="login.call()">
       </div>
 
     </form>
@@ -53,7 +53,7 @@
   </svg>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="login.js"></script>
+  <script src="signup.js"></script>
 
 
 </body>

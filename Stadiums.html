@@ -14,7 +14,7 @@
         <header class="header">
             <div class="container">
                 <nav class="navigation">
-                    <a href="index-guest.html" class="logo">
+                    <a href="index-admin.html" class="logo">
                         <img src="./images/logo.svg" alt="Logo" class="logo-img" />
                     </a>
                     <div class="mobile-menu-icon">
@@ -22,19 +22,23 @@
                     </div>
                     <ul class="nav_menu">
                         <li class="nav_list">
-                            <a href="index-guest.html" class="nav_link active">Home</a>
+                            <a href="index-admin.html" class="nav_link active">Home</a>
                         </li>
                         <li class="nav_list">
                             <a href="https://www.qatar2022.qa/en/tournament/stadiums" class="nav_link">Stadiums</a>
                         </li>
+                        <li class="nav_list">
+                            <a href="admin-portal.html" class="nav_link">Admin Portal</a>
+                        </li>
                         <li class="nav_list btn-nav">
-                            <a href="Login.html" class="btn-outline">
-                                <span>Log in</span>
+                            <a href="Profile.html" class="btn-outline">
+                                <span>Profile</span>
                             </a>
                         </li>
                         <li class="nav_list btn-nav">
-                            <a href="Signup.html" class="btn-outline">
-                                <span>Sign up</span>
+                            <!-- TODO: Action to logout -->
+                            <a href="Login.html" class="btn-outline">
+                                <span>Logout</span>
                             </a>
                         </li>
                     </ul>
@@ -51,8 +55,8 @@
                         <p class="paragraph">
                             Come for World Cup matches & explore all over Qatar.
                         </p>
-                        <!-- redirect to register page -->
-                        <a href="Signup.html" class="btn-primary">
+                        <!-- redirect to matches section -->
+                        <a href="#matches" class="btn-primary">
                             <span>Get the ticket</span>
                         </a>
                         
@@ -74,11 +78,17 @@
     </section> -->
     <section>
         <div class="container">
-            <div class="stadiums-container">
+            <div class="matches-container">
                 <h1 class="standings-heading">FIFA World Cup Qatar 2022</h1>
-                <h2 class="standings-subheading">Stadiums</h2>
-                <h3 class="loader" id="stadiums-loader">Stadiums are loading...</h3>
-                <div class="stadiums">
+                <div class="matches-addition-container">
+                    <h2 class="standings-subheading">Matches</h2>
+                    <!-- Add a button to add a new match -->
+                    <a href="./add-match.html" class="btn-secondary">
+                        <span>Add Match</span>
+                    </a>
+                </div>
+                <h3 class="loader" id="matches-loader">Matches are loading...</h3>
+                <div class="matches">
 
                     
                 </div>

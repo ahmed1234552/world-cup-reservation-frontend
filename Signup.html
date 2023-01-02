@@ -8,25 +8,26 @@
 <body class="align">
 
   <div class="grid">
-
+    <a href="index-guest.html" class="logo">
+      <img src="./images/logo.svg" alt="Logo" class="logo-img" />
+    </a>
     <form action="https://httpbin.org/post" method="POST" class="form login">
-
-      <div class="form__field">
-        <label for="login__username"><svg class="icon">
-          </svg><span class="hidden">Username</span></label>
-        <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
-      </div>
 
       <div class="form__field">
         <label for="login__username"><svg class="icon">
           </svg><span class="hidden">First Name</span></label>
         <input autocomplete="username" id="login__username" type="text" name="Fname" class="form__input" placeholder="First Name" required>
       </div>
-
       <div class="form__field">
         <label for="login__username"><svg class="icon">
           </svg><span class="hidden">Last Name</span></label>
         <input autocomplete="username" id="login__username" type="text" name="Lname" class="form__input" placeholder="Last Name" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__username"><svg class="icon">
+          </svg><span class="hidden">Username</span></label>
+        <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
       </div>
 
       <div class="form__field">
@@ -53,7 +54,7 @@
         <input autocomplete="username" id="login__username" type="text" name="Nationality" class="form__input" placeholder="Nationality">
       </div>
 
-      <label>Gender:</label>
+      <!-- <label>Gender:</label>
       <input type="radio" id="under_13" value="under_13" name="gender"><label1 for="under_13" class="light">Male</label1><br>
       <input type="radio" id="over_13" value="over_13" name="gender"><label1 for="over_13" class="light">Female</label1>
 
@@ -62,14 +63,18 @@
       <select name="roles" id="roles">
         <option value="Manager">Manager</option>
         <option value="Fan">Fan</option>
-      </select> 
+      </select>  -->
 
       <div class="form__field">
-        <input type="submit" value="Log In">
+        <input type="submit" value="Register">
       </div>
-
+      
     </form>
-
+    <!-- add button to login page -->
+    <p class="text--center">Already have an account? <a href="Login.html">Login now</a> <svg class="icon">
+      <use xlink:href="#icon-arrow-right"></use>
+    </svg></p>
+    
   </div>
 
   <svg xmlns="http://www.w3.org/2000/svg" class="icons">

@@ -54,21 +54,20 @@
 
 - [x] Username field.
 - [x] Password field.
-- [ ] Button to go to Register page.
-- [ ] Button to go to Home page.
-- [ ] Button to login.
-- [ ] Button to reset password.
+- [x] Button to go to Register page.
+- [x] Button to go to Home page.
+- [x] Button to login.
 
 ## 3. Register Page
 
-- [ ] First name field.
-- [ ] Last name field.
-- [ ] Username field.
-- [ ] Email field.
-- [ ] Password field.
-- [ ] Button to go to Login page.
-- [ ] Button to go to Home page.
-- [ ] Button to register.
+- [x] First name field.
+- [x] Last name field.
+- [x] Username field.
+- [x] Email field.
+- [x] Password field.
+- [x] Button to go to Login page.
+- [x] Button to go to Home page.
+- [x] Button to register.
 
 ## 4. Profile Edit Page
 

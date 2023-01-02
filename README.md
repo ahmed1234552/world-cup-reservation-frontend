@@ -154,26 +154,26 @@ Available only for managers and site administrators.
 ## 11. Add a new stadium Page
 
 Available only for managers and site administrators.
-- [ ] Stadium name field.
-- [ ] Stadium location field.
-- [ ] Stadium capacity field.
-- [ ] Button to go to Home page.
-- [ ] Button to go to all stadiums page.
-- [ ] Button to go to Logout.
-- [ ] Button to add a new stadium.
+- [x] Stadium name field.
+- [x] Stadium location field.
+- [x] Stadium capacity field.
+- [x] Button to go to Home page.
+- [x] Button to go to all stadiums page.
+- [x] Button to go to Logout.
+- [x] Button to add a new stadium.
 
 ## 12. Create a new match Page
 
 Available only for managers and site administrators.
-- [ ] Match name field.
-- [ ] Match date field.
-- [ ] Match time field.
-- [ ] Match stadium field.
-- [ ] Two teams field.
-- [ ] Button to go to Home page.
-- [ ] Button to go to all stadiums page.
-- [ ] Button to go to Logout.
-- [ ] Button to add a new match.
+- [x] Match name field.
+- [x] Match date field.
+- [x] Match time field.
+- [x] Match stadium field.
+- [x] Two teams field.
+- [x] Button to go to Home page.
+- [x] Button to go to all stadiums page.
+- [x] Button to go to Logout.
+- [x] Button to add a new match.
 
 ## 13. Modify the details of an existing match Page
 

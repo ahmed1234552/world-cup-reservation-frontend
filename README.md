@@ -27,11 +27,11 @@
 - [x] Button to go to Login/Register page.
 
 ### Home page for fans
-- [ ] List of all matches.
-- [ ] Each match has a link to its details page.
-- [ ] Button to go to Profile Edit page.
-- [ ] Button to go to Seat Reservations page.
-- [ ] Button to go to Logout.
+- [x] List of all matches.
+- [x] Each match has a link to its details page.
+- [x] Button to go to Profile Edit page.
+- [x] Button to go to Seat Reservations page.
+- [x] Button to go to Logout.
 
 ### Home page for managers
 - [ ] List of all matches.

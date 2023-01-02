@@ -2,19 +2,21 @@
 
 ## Required Pages
 
-- [x] [Home Page](#1-home-page)
-- [x] [Login Page](#2-login-page)
-- [x] [Register Page](#3-register-page)
-- [x] [Profile Edit Page](#4-profile-edit-page)
-- [ ] [Stadiums Page](#5-stadiums-page)
-- [x] [Add a new stadium Page](#6-add-a-new-stadium-page)
-- [x] [Match Details Page](#7-match-details-page)
-- [x] [Create a new match Page](#8-create-a-new-match-page)
-- [x] [Modify the details of an existing match Page](#9-modify-the-details-of-an-existing-match-page)
-- [x] [Seat Reservation Page](#10-seat-reservation-page)
-- [x] [Seat Reservation Payment Page](#11-seat-reservation-payment-page)
-- [ ] [Seat Reservation Status Page](#12-seat-reservation-status-page)
-- [x] [Admin Portal Page](#13-admin-portal-page)
+| Page | Frontend | Backend |
+| --- | --- | --- |
+| [Home Page](#1-home-page) | [x] | [x] |
+| [Login Page](#2-login-page) | [x] | [ ] |
+| [Register Page](#3-register-page) | [x] | [ ] |
+| [Profile Edit Page](#4-profile-edit-page) | [x] | [ ] |
+| [Stadiums Page](#5-stadiums-page) | [ ] | [ ] |
+| [Add a new stadium Page](#6-add-a-new-stadium-page) | [x] | [ ] |
+| [Match Details Page](#7-match-details-page) | [x] | [ ] |
+| [Create a new match Page](#8-create-a-new-match-page) | [x] | [ ] |
+| [Modify the details of an existing match Page](#9-modify-the-details-of-an-existing-match-page) | [x] | [ ] |
+| [Seat Reservation Page](#10-seat-reservation-page) | [x] | [ ] |
+| [Seat Reservation Payment Page](#11-seat-reservation-payment-page) | [x] | [ ] |
+| [Seat Reservation Status Page](#12-seat-reservation-status-page) | [ ] | [ ] |
+| [Admin Portal Page](#13-admin-portal-page) | [x] | [ ] |
 
 
 ## 1. Home Page

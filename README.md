@@ -2,22 +2,20 @@
 
 ## Required Pages
 
-- [x] Home Page
-- [x] Login Page
-- [x] Register Page
-- [x] Stadiums Page
-- [x] Match Details Page
-- [ ] Seat Reservation Page
-- [ ] Seat Reservation Confirmation Page
-- [ ] Seat Reservation Cancellation Page
-- [ ] Profile Edit Page
-- [ ] {Manager} All Users Page
-- [ ] {Manager} View vacant/reserved seats for a match Page
-- [ ] {Manager} Add a new stadium Page
-- [ ] {Manager} Create a new match Page
-- [ ] {Manager} Modify the details of an existing match Page
-- [ ] {Site Administrator} Approve/Reject a manager authorization request Page
-- [ ] {Site Administrator} Remove a user Page
+- [x] [Home Page](#1-home-page)
+- [x] [Login Page](#2-login-page)
+- [x] [Register Page](#3-register-page)
+- [ ] [Profile Edit Page](#4-profile-edit-page)
+- [ ] [Stadiums Page](#5-stadiums-page)
+- [x] [Add a new stadium Page](#6-add-a-new-stadium-page)
+- [x] [Match Details Page](#7-match-details-page)
+- [x] [Create a new match Page](#8-create-a-new-match-page)
+- [x] [Modify the details of an existing match Page](#9-modify-the-details-of-an-existing-match-page)
+- [ ] [Seat Reservation Page](#10-seat-reservation-page)
+- [ ] [Seat Reservation Payment Page](#11-seat-reservation-payment-page)
+- [ ] [Seat Reservation Status Page](#12-seat-reservation-status-page)
+- [ ] [Admin Portal Page](#13-admin-portal-page)
+
 
 ## 1. Home Page
 
@@ -91,7 +89,19 @@ Available only for managers and site administrators.
 - [ ] Button to go to add a new stadium page.
 - [ ] Button to go to logout.
 
-## 6. Match Details Page
+
+## 6. Add a new stadium Page
+
+Available only for managers and site administrators.
+- [x] Stadium name field.
+- [x] Stadium location field.
+- [x] Stadium capacity field.
+- [x] Button to go to Home page.
+- [x] Button to go to all stadiums page.
+- [x] Button to go to Logout.
+- [x] Button to add a new stadium.
+
+## 7. Match Details Page
 
 ### Match Details Page for guests
 - [x] Match details.
@@ -114,55 +124,7 @@ Available only for managers and site administrators.
 - [x] Button to go to Logout.
 - [x] Button to go to modify the details of an existing match page.
 
-## 7. Seat Reservation Page
-
-- [ ] List of all seats showing the status of each seat.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Seat Reservation Confirmation page.
-- [ ] Button to go to Seat Reservation Cancellation page. (redirects to match details page)
-- [ ] Button to go to Logout.
-- [ ] Button to go to Profile Edit page.
-
-## 8. Seat Reservation Confirmation Page
-
-- [ ] Show the selected seats.
-- [ ] Total price and other details.
-- [ ] Button to go to Home page.
-- [ ] Button to Confirm reservation and go to Payment page.
-- [ ] Button to Cancel reservation. (redirects to match details page)
-- [ ] Button to go to Logout.
-- [ ] Button to go to Profile Edit page.
-
-## 9. Seat Reservation Payment Page
-
-- [ ] Show the payment details.
-- [ ] Enter payment details.
-- [ ] Button to Pay.
-- [ ] Button to Cancel reservation. (redirects to match details page)
-- [ ] Button to go to Logout. (cancel reservation)
-- [ ] Button to go to Profile Edit page. (cancel reservation)
-- [ ] Button to go to Home page. (cancel reservation)
-
-## 10. Seat Reservation Status Page
-
-- [ ] Show the reservation status.
-- [ ] Button to go to Home page.
-- [ ] Button to go to Logout.
-- [ ] Button to go to Profile Edit page.
-- [ ] Button to go to return to match details page. (buy more tickets)
-
-## 11. Add a new stadium Page
-
-Available only for managers and site administrators.
-- [x] Stadium name field.
-- [x] Stadium location field.
-- [x] Stadium capacity field.
-- [x] Button to go to Home page.
-- [x] Button to go to all stadiums page.
-- [x] Button to go to Logout.
-- [x] Button to add a new stadium.
-
-## 12. Create a new match Page
+## 8. Create a new match Page
 
 Available only for managers and site administrators.
 - [x] Match name field.
@@ -175,7 +137,7 @@ Available only for managers and site administrators.
 - [x] Button to go to Logout.
 - [x] Button to add a new match.
 
-## 13. Modify the details of an existing match Page
+## 9. Modify the details of an existing match Page
 
 Available only for managers and site administrators.
 - [x] Match name field.
@@ -188,7 +150,38 @@ Available only for managers and site administrators.
 - [x] Button to go to Logout.
 - [x] Button to save changes.
 
-## 14. Admin Portal Page
+
+
+## 10. Seat Reservation Page
+
+- [ ] List of all seats showing the status of each seat.
+- [ ] Button to go to Home page.
+- [ ] Show the selected seats.
+- [ ] Total price and other details.
+- [ ] Button to cancel reservation. (redirects to match details page)
+- [ ] Button to go to Logout.
+- [ ] Button to go to Profile Edit page.
+
+
+## 11. Seat Reservation Payment Page
+
+- [ ] Show the payment details.
+- [ ] Enter payment details.
+- [ ] Button to Pay.
+- [ ] Button to Cancel reservation. (redirects to match details page)
+- [ ] Button to go to Logout. (cancel reservation)
+- [ ] Button to go to Profile Edit page. (cancel reservation)
+- [ ] Button to go to Home page. (cancel reservation)
+
+## 12. Seat Reservation Status Page
+
+- [ ] Show the reservation status.
+- [ ] Button to go to Home page.
+- [ ] Button to go to Logout.
+- [ ] Button to go to Profile Edit page.
+- [ ] Button to go to return to match details page. (buy more tickets)
+
+## 13. Admin Portal Page
 
 Available only for site administrators.
 - [ ] List of all users.

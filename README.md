@@ -22,9 +22,9 @@
 ## 1. Home Page
 
 ### Home page for guests
-- [ ] List of all matches.
-- [ ] Each match has a link to its details page.
-- [ ] Button to go to Login/Register page.
+- [x] List of all matches.
+- [x] Each match has a link to its details page.
+- [x] Button to go to Login/Register page.
 
 ### Home page for fans
 - [ ] List of all matches.
@@ -52,8 +52,8 @@
 
 ## 2. Login Page
 
-- [ ] Username field.
-- [ ] Password field.
+- [x] Username field.
+- [x] Password field.
 - [ ] Button to go to Register page.
 - [ ] Button to go to Home page.
 - [ ] Button to login.

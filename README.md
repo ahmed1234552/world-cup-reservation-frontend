@@ -178,15 +178,15 @@ Available only for managers and site administrators.
 ## 13. Modify the details of an existing match Page
 
 Available only for managers and site administrators.
-- [ ] Match name field.
-- [ ] Match date field.
-- [ ] Match time field.
-- [ ] Match stadium field.
-- [ ] Two teams field.
-- [ ] Button to go to Home page.
-- [ ] Button to go to all stadiums page.
-- [ ] Button to go to Logout.
-- [ ] Button to save changes.
+- [x] Match name field.
+- [x] Match date field.
+- [x] Match time field.
+- [x] Match stadium field.
+- [x] Two teams field.
+- [x] Button to go to Home page.
+- [x] Button to go to all stadiums page.
+- [x] Button to go to Logout.
+- [x] Button to save changes.
 
 ## 14. Admin Portal Page
 

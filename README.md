@@ -69,16 +69,13 @@
 
 ## 4. Profile Edit Page
 
-- [ ] First name field.
-- [ ] Last name field.
-- [ ] Username field.
-- [ ] Password field.
-- [ ] Button to go to Home page.
-- [ ] Button to save changes.
-- [ ] Button to cancel changes.
-- [ ] Button to delete account.
-- [ ] Button to logout.
-- [ ] Button to Request to be a manager.
+- [x] First name field.
+- [x] Last name field.
+- [x] Username field.
+- [x] Password field.
+- [x] Button to go to Home page.
+- [x] Button to save changes.
+- [x] Button to Request to be a manager.
 
 ## 5. Stadiums Page
 

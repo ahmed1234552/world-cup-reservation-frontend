@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QATAR World Cup 2022</title>
+    <link rel="stylesheet" href="add-match.css" />
+  </head>
+
+  <body>
+    //
+    <!-- Path: add-match.html -->
+    <section id="hero">
+      <header class="header">
+        <div class="container">
+          <nav class="navigation">
+            <a href="index.html" class="logo">
+              <img src="images/logo.svg" alt="Logo" class="logo-img" />
+            </a>
+            <div class="mobile-menu-icon">
+              <ion-icon name="menu-outline" class="menu_icon"></ion-icon>
+            </div>
+            <ul class="nav_menu">
+              <li class="nav_list">
+                <a
+                  href="file:///C:/Users/Femto/Desktop/Consultation/Project/fifa-world-cup-Hero-Design/index.html"
+                  class="nav_link active"
+                  >Home</a
+                >
+              </li>
+              <li class="nav_list">
+                <a
+                  href="https://www.qatar2022.qa/en/tournament/stadiums"
+                  class="nav_link"
+                  >Stadiums</a
+                >
+              </li>
+              <li class="nav_list">
+                <a
+                  href="https://world-cup-matches.codsfli.com/"
+                  class="nav_link"
+                  target="_matches"
+                  >Match Schedule</a
+                >
+              </li>
+              <li class="nav_list btn-nav">
+                <a href="./Login.html" class="btn-outline">
+                  <span>Log in</span>
+                </a>
+              </li>
+              <li class="nav_list btn-nav">
+                <a href="./Signup.html" class="btn-outline">
+                  <span>Sign up</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <div class="Staduim-image">
+      <img src="images/stadium.png" width="1300" height="500" />
+    </div>
+    <!-- same class ??  -->
+    <div class="add_match">
+      <h1>Modify Existing Match</h1>
+      <form method="post">
+        <input
+          type="text"
+          name="match_name"
+          placeholder="match name"
+          required="required"
+        />
+        <!-- take date input -->
+        <input
+          type="date"
+          name="match_date"
+          placeholder="match date"
+          required="required"
+        />
+        <!-- take time input -->
+        <input
+          type="time"
+          name="match_time"
+          placeholder="match time"
+          required="required"
+        />
+        <input
+          type="text"
+          name="match_stadium"
+          placeholder="stadium"
+          required="required"
+        />
+        <!-- Two teams field -->
+        <input
+          type="text"
+          name="match_team1"
+          placeholder="team 1"
+          required="required"
+        />
+        <input
+          type="text"
+          name="match_team2"
+          placeholder="team 2"
+          required="required"
+        />
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          modify match
+        </button>
+      </form>
+    </div>
+  </body>
+  <!--
+<div class="Staduim-image">
+  <img src="images/world.jpg"
+  width="1700"
+  height="800">
+</div>
+
+----------css----------------
+.Staduim-image{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1517436073-3b1f3c7c7f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80%22);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+ -->
+</html>

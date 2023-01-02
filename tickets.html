@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QATAR World Cup 2022</title>
+    <link rel="stylesheet" href="tickets.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Logo" class="logo-img" />
+          </a>
+          <div class="mobile-menu-icon">
+            <ion-icon name="menu-outline" class="menu_icon"></ion-icon>
+          </div>
+          <ul class="nav_menu">
+            <li class="nav_list">
+              <a
+                href="file:///C:/Users/Femto/Desktop/Consultation/Project/fifa-world-cup-Hero-Design/index.html"
+                class="nav_link active"
+                >Home</a
+              >
+            </li>
+            <li class="nav_list">
+              <a
+                href="https://www.qatar2022.qa/en/tournament/stadiums"
+                class="nav_link"
+                >Stadiums</a
+              >
+            </li>
+            <li class="nav_list">
+              <a
+                href="https://world-cup-matches.codsfli.com/"
+                class="nav_link"
+                target="_matches"
+                >Match Schedule</a
+              >
+            </li>
+            <li class="nav_list btn-nav">
+              <a href="./Login.html" class="btn-outline">
+                <span>Log in</span>
+              </a>
+            </li>
+            <li class="nav_list btn-nav">
+              <a href="./Signup.html" class="btn-outline">
+                <span>Sign up</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      function LoopTest() {
+        var i = 0;
+        var stop = 5;//number of tickets
+        var team1 = "team 111 ";
+        var team2 = "team 222 ";
+        var date = "the dateeeee ";
+        var str = "";
+        for (i = 0; i < 5; i++) {
+          //team1 = team1[i]; //team2 = team2[i]; //date = date[i];
+            str= "team 1" + team1 + "match date" + "team 2" + team2 + "date " + date+ "<br>";
+          document.getElementById("container").innerHTML +=str;
+        }
+      }
+    </script>
+
+
+    <div id="container">
+        <script>LoopTest();</script>
+    </div>
+  </body>
+</html>

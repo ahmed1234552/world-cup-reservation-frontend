@@ -5,7 +5,7 @@
 - [x] [Home Page](#1-home-page)
 - [x] [Login Page](#2-login-page)
 - [x] [Register Page](#3-register-page)
-- [ ] [Profile Edit Page](#4-profile-edit-page)
+- [x] [Profile Edit Page](#4-profile-edit-page)
 - [ ] [Stadiums Page](#5-stadiums-page)
 - [x] [Add a new stadium Page](#6-add-a-new-stadium-page)
 - [x] [Match Details Page](#7-match-details-page)

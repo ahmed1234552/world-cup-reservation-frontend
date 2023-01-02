@@ -5,7 +5,7 @@
 - [x] Home Page
 - [x] Login Page
 - [x] Register Page
-- [ ] Stadiums Page
+- [x] Stadiums Page
 - [ ] Match Details Page
 - [ ] Seat Reservation Page
 - [ ] Seat Reservation Confirmation Page

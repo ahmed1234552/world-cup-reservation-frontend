@@ -491,6 +491,12 @@ body {
     transform: rotate(180deg);
 }
 
+.matches-addition-container {
+    /* make all components on the same line */
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 382px) {
     .tab-link {
         margin: 2rem 0 0 0;

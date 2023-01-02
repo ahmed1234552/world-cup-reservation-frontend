@@ -34,12 +34,12 @@
 - [x] Button to go to Logout.
 
 ### Home page for managers
-- [ ] List of all matches.
-- [ ] Each match has a link to its details page.
-- [ ] Button to go to Profile Edit page.
-- [ ] Button to go to Logout.
-- [ ] Button to go to all stadiums page.
-- [ ] Button to go to add a new match page.
+- [x] List of all matches.
+- [x] Each match has a link to its details page.
+- [x] Button to go to Profile Edit page.
+- [x] Button to go to Logout.
+- [x] Button to go to all stadiums page.
+- [x] Button to go to add a new match page.
 
 ### Home page for site administrators
 - [ ] List of all matches.

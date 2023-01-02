@@ -98,53 +98,83 @@ let matchData = {
 async function fetchMatches() {
   let matches_wrapper = document.querySelector('.matches');
   let loader = document.querySelector('#matches-loader');
-  // TODO: Fetch the data from the matches api here
-  // let url = 'https://world-cup.codsfli.com/points.php';
-  // let data = await fetch(url);
-  // if (data.ok) {
-  setTimeout(async() => {
-    loader.remove();
-                // let response = await data.json();
-                // response.map((groups) => {
-                //             let sor = groups.teams.sort((a, b) => {
-                //                 return a.position - b.position;
-                //             });
-    matches_wrapper.innerHTML += `
-      <div class="match">
-        <div class="match-info">
-            <h4 class="group">${matchData.group}</h4>
-            <h4>Match Number<span class="badge">${matchData.matchNumber}</span> </h4>
-        </div>
-        <div class="flags">
-            <div class="home-flag">
-                <img src="https://world-cup.codsfli.com/flag/${matchData.homeTeam.abbreviation}.png" alt="${matchData.homeTeam.name}" class="flag">
-            <h3 class="home-team">${matchData.homeTeam.name}</h3>
+  let url = 'https://careful-elk-petticoat.cyclic.app/api/match/';
+  let data = await fetch(url);
+  let response = await data.json();
+  if (data.ok) {
+    setTimeout(async() => {
+      loader.remove();
+      response.data.forEach(match => {
+        let date = new Date(match.date);
+        console.log(date);
+        matches_wrapper.innerHTML += `
+          <div class="match">
+            <div class="match-info">
+                <h4>Match Number<span class="badge">${match.id}</span> </h4>
+                <h4 class="group">${match.venue_name}</h4>
             </div>
-            <span class="vs">
-            VS
-            </span>
-            <div class="away-flag">
-            <img src="https://world-cup.codsfli.com/flag/${matchData.awayTeam.abbreviation}.png" alt="${matchData.awayTeam.name}" class="flag">
-            <h3 class="home-team">${matchData.awayTeam.name}</h3>
+            <div class="flags">
+                <div class="home-flag">
+                    <img src="https://world-cup.codsfli.com/flag/${match.t1}.png" alt="${match.t1}" class="flag">
+                <h3 class="home-team">${match.t1}</h3>
+                </div>
+                <span class="vs">
+                VS
+                </span>
+                <div class="away-flag">
+                <img src="https://world-cup.codsfli.com/flag/${match.t2}.png" alt="${match.t2}" class="flag">
+                <h3 class="home-team">${match.t2}</h3>
+                </div>
             </div>
-        </div>
-        <div class="time-area">
-            <div class="time">
-                <h4 class="month">${matchData.time.month}</h4>
-                <h4 class="day">${matchData.time.day}</h4>
-                <h4 class="day">${matchData.time.date}</h4>
+            <div class="time-area">
+                <div class="time">
+                    <h4 class="month">${date.getMonth()}/${date.getDay()}</h4>
+                </div>
+                <h4 class="match-time">${match.time}</h4>
             </div>
-            <h4 class="match-time">${matchData.time.time}</h4>
-        </div>
-        <div class="match-details">
-            <a href="./match-details.html" class="btn-secondary">
-                <span>Match Details</span>
-            </a>
-        </div>
-      </div>
-    `;
-  // });
+            <div class="match-details">
+                <a href="./match-details.html" class="btn-secondary">
+                    <span>Match Details</span>
+                </a>
+            </div>
+          </div>
+        `;
+      });
   }, 1000);
+}
 }
 
 fetchMatches();
+
+// <div class="match">
+//             <div class="match-info">
+//                 <h4 class="group">${matchData.group}</h4>
+//                 <h4>Match Number<span class="badge">${matchData.matchNumber}</span> </h4>
+//             </div>
+//             <div class="flags">
+//                 <div class="home-flag">
+//                     <img src="https://world-cup.codsfli.com/flag/${matchData.homeTeam.abbreviation}.png" alt="${matchData.homeTeam.name}" class="flag">
+//                 <h3 class="home-team">${matchData.homeTeam.name}</h3>
+//                 </div>
+//                 <span class="vs">
+//                 VS
+//                 </span>
+//                 <div class="away-flag">
+//                 <img src="https://world-cup.codsfli.com/flag/${matchData.awayTeam.abbreviation}.png" alt="${matchData.awayTeam.name}" class="flag">
+//                 <h3 class="home-team">${matchData.awayTeam.name}</h3>
+//                 </div>
+//             </div>
+//             <div class="time-area">
+//                 <div class="time">
+//                     <h4 class="month">${matchData.time.month}</h4>
+//                     <h4 class="day">${matchData.time.day}</h4>
+//                     <h4 class="day">${matchData.time.date}</h4>
+//                 </div>
+//                 <h4 class="match-time">${matchData.time.time}</h4>
+//             </div>
+//             <div class="match-details">
+//                 <a href="./match-details.html" class="btn-secondary">
+//                     <span>Match Details</span>
+//                 </a>
+//             </div>
+//           </div>

@@ -35,31 +35,53 @@ let users = [
 
 async function loadUsers() {
     let usersWrapper = document.querySelector('#users');
-    let loader = document.querySelector('#users-loader');
-    // let url = 'https://world-cup.codsfli.com/users.php';    
-    // let data = await fetch(url);
-    // if (data.ok) {
-    //     setTimeout(async() => {
-    //         loader.remove();
-    //         let response = await data.json();
-    //         response.map((user) => {
-    users.forEach((user, index)=>{
-        if (!user.isAdmin){
-            usersWrapper.innerHTML += `
-                <tr>
-                    <th scope="row">${index+1}</th>
-                    <td>${user.firstName}</td>
-                    <td>${user.email}</td>
-                    <td>${user.isManager ? 'Manager' : 'User'}</td>
-                    <td><button class="btn btn-secondary">Edit</button></td>
-                    <td><button class="btn btn-danger">Delete</button></td>
-                </tr>
-            `;
-        }
+    let url = 'https://careful-elk-petticoat.cyclic.app/api/users/';
+    let data = await fetch(url);
+    let res = await data.json();
+    if (data.ok) {
+        setTimeout(async() => {
+            res.data.forEach((user, index)=>{
+                let editButtonId = 'edit-' + user.user_name;
+                let deleteButtonId = 'delete-' + user.user_name;
+                if (!user.isAdmin){
+                usersWrapper.innerHTML += `
+                    <tr>
+                        <th scope="row">${index+1}</th>
+                        <td>${user.fname}</td>
+                        <td>${user.email}</td>
+                        <td>${user.role == 'manager' ? 'Manager' : 'User'}</td>
+                        <td><button id="${editButtonId}" class="btn btn-secondary" onClick="editUser.call(this)">Edit</button></td>
+                        <td><button id="${deleteButtonId}" class="btn btn-danger" onClick="deleteUser.call(this)">Delete</button></td>
+                    </tr>
+                `;
+                }
+            });
+        });
 
-    });
+    }
 
 }
+
+
+async function deleteUser() {
+    // This function is called when the delete button is clicked
+    let username = this.id.split('-')[1];
+    console.log(this.id);
+    let url = `https://careful-elk-petticoat.cyclic.app/api/users/${username}`;
+    let data = await fetch(url, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+    let res = await data.json();
+    if (data.ok) {
+        console.log(res);
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
+    }
+}            
 
 let managerRequests = [
     {
